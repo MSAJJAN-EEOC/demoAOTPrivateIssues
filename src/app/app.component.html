@@ -1,3 +1,20 @@
 <h1>
   {{title}}
 </h1>
+
+<ul>
+  <li> Private app component object - dereference to a private Property: {{privateModel.privateProperty}} </li>
+  <li> Private app component object - dereference to a public Property: {{publicModel.publicProperty}} </li>
+  <li> Public app component object - dereference to a private Property: {{privateModel.privateProperty}} </li>
+  <li> Public app component object - dereference to a public Property: {{publicModel.publicProperty}} </li>
+
+  <li> Private app component object - dereference to a private Method: {{privateModel.privateMethod()}} </li>
+  <li> Private app component object - dereference to a public Method: {{publicModel.publicMethod()}} </li>
+  <li> Public app component object - dereference to a private Method: {{privateModel.privateMethod()}} </li>
+  <li> Public app component object - dereference to a public Method: {{publicModel.publicMethod()}} </li>
+</ul>
+
+<ul>
+  <li> Dereferencing a *private* service instance to a *public* property: {{service.serviceProperty}} </li>
+  <li> Dereferencing a *private* service instance to a *public* method: {{service.serviceMethod()}} </li>
+</ul>
